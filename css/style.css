@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a, a:visited, a:active{
+    color:white;
+    text-decoration:none;
+}
+body {
+    font-family: 'Open sans', sans-serif;
+    font-size: 18px;
+}
+
+nav{
+    background:black;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:0 40px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 1;
+    height:100px;
+}
+
+nav ul{
+    display:flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 0;
+    list-style:none;
+    justify-content: flex-end;
+    gap:20px;
+}
+
+.li-logo a{
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+
+.li-logo i {
+    font-size:250%;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Dancing Script';
+    font-weight: 700;
+}
+
+article {
+    width: 45vw;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    animation-name: popup;
+    animation-duration: 0.8s;
+    margin-top:100px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius:5px;
+}
+
+li {
+    list-style-position: inside;
+}
+
+p {
+
+    margin: 0 auto;
+}
+
+ul,
+ol {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    body{
+        font-size: 14px;
+    }
+    article{
+        width:100%;
+    }
+    h1{
+        font-size: 220%;
+    }
+    nav{
+        padding:10px;
+    }
+}
+
+@keyframes popup {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
